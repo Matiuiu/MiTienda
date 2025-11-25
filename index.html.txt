@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tienda de Zapatillas</title>
+    <style>
+        body {
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .productos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .item {
+            background: #fff;
+            padding: 15px;
+            width: 260px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        button {
+            background: #25D366;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #1ebe5d;
+        }
+    </style>
+</head>
+<body>
+
+```
+<h1>Tienda de Zapatillas</h1>
+
+<div class="productos">
+
+    <!-- Producto 1 -->
+    <div class="item">
+        <img src="https://via.placeholder.com/300x250?text=Zapatilla+1" alt="">
+        <h3>Zapatilla Nike</h3>
+        <p>$45.000</p>
+        <button onclick="comprar('Zapatilla Nike')">Comprar</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="item">
+        <img src="https://via.placeholder.com/300x250?text=Zapatilla+2" alt="">
+        <h3>Zapatilla Adidas</h3>
+        <p>$50.000</p>
+        <button onclick="comprar('Zapatilla Adidas')">Comprar</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="item">
+        <img src="https://via.placeholder.com/300x250?text=Zapatilla+3" alt="">
+        <h3>Zapatilla Puma</h3>
+        <p>$42.000</p>
+        <button onclick="comprar('Zapatilla Puma')">Comprar</button>
+    </div>
+
+</div>
+
+<script>
+    function comprar(producto) {
+        // Cambia este número por tu WhatsApp
+        let numero = "5491122334455";
+
+        let mensaje = `Hola! Quiero comprar ${producto}`;
+        window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, "_blank");
+    }
+</script>
+```
+
+</body>
+</html>
